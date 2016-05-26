@@ -124,9 +124,65 @@ div.case-study-images img {
 	width: 400px;
 }
 
+/*About page */
 
-/*About */
+
+.hero-about {
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+  height: 320px;
+    width: 1500px;
+  padding: 3em;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-text p{
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: 0.75px;
+    margin-top: 3.5em;
+    font-family: "open sans", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    width: 575px;
+}
 
 .about-intro {
     text-align: center;
+    font-size: 13px;
+}
+
+.about-section:nth-child(odd) .service-image {
+    margin-top: 80px;
+    float: left;
+    padding-right: 75px;
+}
+
+.about-section:nth-child(odd) .service-description {
+    margin-top: 40px;
+    width: 575px;
+    float: left;
+}
+
+.about-section:nth-child(even) .service-image {
+    margin-top: 80px;
+    float: right;
+    padding-left: 75px;
+}
+
+.about-section:nth-child(even) .service-description {
+    margin-top: 40px;
+    width: 575px;
+    float: right;
+}
+
+.contact-description h2{
+    margin-left: 200px;
+    line-height: 5em;
+}
+
+.contact-description .button{
+    display: inline-block;
 }
