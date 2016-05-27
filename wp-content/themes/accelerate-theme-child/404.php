@@ -12,16 +12,14 @@
  */
 
 get_header(); ?>
-<section class="home-page">
+<section class="404-page">
 	<div class="site-content">
-		<?php while ( have_posts() ) : the_post(); ?>
 			<div class='homepage-hero'>
-				<?php the_content(); ?>
-				<a class="button" href="<?php echo home_url(); ?>/blog">Go Home!</a>
+				<p><a href="<?php echo home_url(); ?>">Click here to Accelerate your marketing efforts</a></p>                
 			</div>
 		<?php endwhile; // end of the loop. ?>
-	</div><!-- .container -->
-</section><!-- .home-page -->
+	</div><!-- .site-content -->
+</section><!-- .404-page -->
 
 
 <?php get_footer(); ?>

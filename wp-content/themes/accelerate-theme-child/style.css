@@ -126,7 +126,6 @@ div.case-study-images img {
 
 /*About page */
 
-
 .hero-about {
   background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
   height: 320px;
@@ -138,15 +137,16 @@ div.case-study-images img {
     position: relative;
 }
 
-.hero-text p{
+.hero-text {
+    width: 575px;
     text-align: center;
+    margin-left: 450px;
     line-height: 1.5em;
     letter-spacing: 0.75px;
     margin-top: 3.5em;
     font-family: "open sans", sans-serif;
     font-size: 24px;
     font-weight: normal;
-    width: 575px;
 }
 
 .about-intro {
@@ -178,11 +178,39 @@ div.case-study-images img {
     float: right;
 }
 
+.contact-description {
+    text-align: center;
+    padding-top: 50px;
+}
+
 .contact-description h2{
-    margin-left: 200px;
-    line-height: 5em;
+    display: inline-block;
+    margin-right: 2em;
 }
 
 .contact-description .button{
     display: inline-block;
+}
+
+/* 404 Page */
+
+.hero-about {
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+  height: 320px;
+    width: 1500px;
+  padding: 3em;
+}
+
+.hero-image {
+    position: relative;
+
+.homepage-hero p{
+    text-align: center;
+    margin-left: 450px;
+    line-height: 1.5em;
+    letter-spacing: 0.75px;
+    margin-top: 3.5em;
+    font-family: "open sans", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
 }

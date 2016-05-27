@@ -13,7 +13,8 @@ get_header(); ?>
     <?php 
         $taxi_image = get_field("taxi_image");
         $taxi_text = get_field("taxi_text"); 
-        $taxi_size = "full"; $services_intro_title = get_field("services_intro_title");
+        $taxi_size = "full"; 
+        $services_intro_title = get_field("services_intro_title");
         $services_intro_text = get_field("services_intro_text");
         $service_1_title = get_field("service_1_title");
         $service_1_text = get_field("service_1_text");
@@ -30,13 +31,13 @@ get_header(); ?>
         $contact_button_title = get_field("contact_button_title");
         $size = "small"; ?> 
             
-        <div class="site-content">
-            <section class="hero-about">
-                <div class="hero-text">    
-                    <h3><?php echo $taxi_text; ?></h3>
-                </div>
-            </section>
+        <section class="hero-about">
+            <div class="hero-text">    
+                <h3><?php echo $taxi_text; ?></h3>
+            </div>
+        </section>
                 
+        <div class="site-content">          
             <section class="about-intro">
                 <h6><?php echo $services_intro_title; ?></h6>
                     <?php echo $services_intro_text; ?>
