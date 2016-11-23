@@ -24,6 +24,25 @@ get_header(); ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
+<section class="featured-work">
+	<div class="site-content">
+	
+		<h4> Featured Work</h4>
+		<?php query_posts('posts_per_page=3'); ?>
+				<?php while ( have_posts () ) : the_post(); ?>
+					<h3><?php the_title(); ?></h3>
+					<?php the_excerpt(); ?>
+			<a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
+				<?php endwhile; ?>
+			<?php wp_reset_query(); ?>
+		
+		
+		
+	</div>
+
+
+</section>
+
 <section class="recent-posts">
 	<div class="site-content">
 		<div class="blog-post">
