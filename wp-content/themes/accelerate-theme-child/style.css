@@ -55,7 +55,7 @@
 /* Case Studies */
 
 article.case-study {
-	margin: 0 40px 0 0;
+	margin: 40px 0 0;
 }
 
 aside.case-study-sidebar {
@@ -71,5 +71,10 @@ div.case-study-images {
 
 div.case-study-images img {
 	margin-bottom: 50px;
-	border 1px solid #dddddd;
+	border: 1px solid #dddddd;
+}
+
+/* Homepage */
+ul {
+	list-style-type: none;
 }
