@@ -75,6 +75,8 @@ div.case-study-images img {
 }
 
 /* Homepage */
-ul {
+ul.homepage-featured-work {
 	list-style-type: none;
 }
+
+
