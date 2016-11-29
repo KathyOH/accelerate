@@ -26,7 +26,8 @@ get_header(); ?>
 
 <section class="featured-work">
 	<div class="site-content">
-		<h4>Featured Work</h4>
+		<h4 class="center-text">FEATURED WORK</h4>
+		<br>
 		
 		<ul class="homepage-featured-work">
 		<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
@@ -38,7 +39,7 @@ get_header(); ?>
 					<figure>
 						<?php echo wp_get_attachment_image($image_1, $size); ?>
 					</figure>
-					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<h5 class="center-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
 				</li>
 				<?php endwhile; ?>
 			<?php wp_reset_query(); ?>
@@ -54,7 +55,7 @@ get_header(); ?>
 <section class="recent-posts">
 	<div class="site-content">
 		<div class="blog-post">
-			<h4>From the Blog</h4>
+			<h4>FROM THE BLOG</h4>
 			<?php query_posts('posts_per_page=1'); ?>
 				<?php while ( have_posts () ) : the_post(); ?>
 					<h2><?php the_title(); ?></h2>

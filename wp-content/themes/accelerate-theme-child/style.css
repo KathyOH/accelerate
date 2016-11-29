@@ -38,6 +38,7 @@
 	font-family: 'Montserrat';
 	color: #a6a6a6;
 	text-transform: uppercase;
+	text-align: left;
 }
 .blog-post h2 {
 	font-size: 24px;
@@ -70,13 +71,24 @@ div.case-study-images {
 }
 
 div.case-study-images img {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	border: 1px solid #dddddd;
 }
 
 /* Homepage */
 ul.homepage-featured-work {
 	list-style-type: none;
+	width: 1000px;
 }
-
+h4.center-text {
+	text-align: center;
+}
+li.individual-featured-work {
+	display: inline-block;
+	float: left;
+	margin-right: 13px;
+}
+h5.center-text {
+	text-align: center;
+}
 
