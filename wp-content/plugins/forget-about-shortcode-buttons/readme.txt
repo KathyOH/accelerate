@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZAHPN
 Tags: css, button, shortcode, edit, visual editor, buttons, wysiwyg, post editor, tinymce, shortcodes, button editor
 Requires at least: 3.9
 Tested up to: 4.4
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,9 @@ Ask me some questions!
 
 
 == Changelog ==
+
+= 1.1.2 =
+* Security Update - XSS patch 
 
 = 1.1.1 =
 * Fix - "Insert button" icon added for custom post types

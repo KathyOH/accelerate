@@ -5,7 +5,7 @@
 	$insert_text = "Insert";
 	if(isset($_GET['ver']))
 	{
-		$fasc_plugin_ver = $_GET['ver'];
+		$fasc_plugin_ver = htmlspecialchars($_GET['ver']);
 	}
 	else
 	{
@@ -22,6 +22,11 @@
 			$insert_text = "Update";
 		}
 	}
+	
+	$ajax_url = urldecode($_GET['ajaxurl']);
+	$ajax_url = filter_var($ajax_url, FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED);
+	
+	
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -35,7 +40,7 @@
 <link rel="stylesheet" href="popup.css?ver=<?php echo $fasc_plugin_ver; ?>">
 <script type="text/javascript">
 var source = "<?php echo $source; ?>"; 
-var ajax_url = "<?php echo $_GET['ajaxurl']; ?>"; 
+var ajax_url = "<?php echo $ajax_url; ?>"; 
 </script>
 <script type="text/javascript" src="popup.min.js?ver=<?php echo $fasc_plugin_ver; ?>"></script>
 </head>

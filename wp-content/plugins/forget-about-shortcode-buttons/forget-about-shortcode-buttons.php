@@ -6,7 +6,7 @@ Description: A visual way to add CSS buttons in the post editor screen.
 Author: Designs & Code
 Author URI: http://www.designsandcode.com/
 License: GPL v3
-Version: 1.1.1
+Version: 1.1.2
 Text Domain: fascbuttons
 */
 
@@ -14,7 +14,7 @@ Text Domain: fascbuttons
 * Set up Plugin Globals
 */
 if (!defined('FASC_BUTTONS_VERSION_NUM'))
-    define('FASC_BUTTONS_VERSION_NUM', '1.1.1');
+    define('FASC_BUTTONS_VERSION_NUM', '1.1.2');
 	
 if (!defined('PLUGIN_SLUG'))
     define('PLUGIN_SLUG', 'fasc-buttons');
@@ -95,7 +95,6 @@ if ( ! class_exists( 'FascButtons' ) )
 				//$buttons = get_user_meta(get_current_user_id(), 'fasc-buttons', true); //get existing buttons
 				$buttons = get_option('fasc-buttons'); //get existing buttons
 				
-				//var_dump($buttons);
 				if(!is_array($buttons))
 				{
 					$buttons = array();
@@ -105,7 +104,7 @@ if ( ! class_exists( 'FascButtons' ) )
 				if($button_html!="")
 				{
 					
-					$button_html = stripslashes($button_html);
+					$button_html = stripslashes(wp_filter_post_kses($button_html));
 					
 					$button_number = count($buttons)+1;
 					
@@ -174,7 +173,7 @@ if ( ! class_exists( 'FascButtons' ) )
 				
 				$renameIndex = (int)$_GET['index'];
 				
-				$name = $_GET['name'];
+				$name = esc_attr($_GET['name']);
 				$buttons[$renameIndex]['name'] = $name;
 				
 				$newButtons = array_reverse($buttons);
@@ -191,8 +190,6 @@ if ( ! class_exists( 'FascButtons' ) )
 				echo json_encode($msg);
 			}
 			
-			//var_dump($_GET);
-			//delete_user_meta(get_current_user_id(), 'fasc-buttons');
 			exit;
 		}
 		
