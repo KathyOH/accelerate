@@ -92,3 +92,23 @@ h5.center-text {
 	text-align: center;
 }
 
+/* Contact Us */
+.nf-field-label {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.nf-field-container.textbox-container.label-above {
+	display: block;
+	width: 35%;
+	float: left;
+	clear: initial;
+}
+.nf-field-container.email-container.label-above {
+	display: block;
+	float: left;
+	width: 35%;
+}
+.nf-field-container.textarea-container.label-above {
+	width: 660px;
+}
