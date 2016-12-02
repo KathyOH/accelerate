@@ -98,17 +98,35 @@ h5.center-text {
 	font-size: 12px;
 }
 
-.nf-field-container.textbox-container.label-above {
+nf-field-container.textbox-container.label-above {
 	display: block;
-	width: 35%;
+	width: 49%;
 	float: left;
 	clear: initial;
 }
-.nf-field-container.email-container.label-above {
+
+nf-field-container.email-container.label-above  {
 	display: block;
 	float: left;
-	width: 35%;
+	width: 49%;
+	margin-left: 2%;
+	clear: initial;
+}
+
+.
+#nf-field-4-wrap {
+	float: right;
+	background-color: #45ac9d;
+	color: white;
 }
 .nf-field-container.textarea-container.label-above {
 	width: 660px;
+}
+
+/*Footer color change*/
+.footer-desc .main-color {
+	color: #45ac9d;
+}
+.footer-desc {
+	width: 400px;
 }
