@@ -16,7 +16,7 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">
 				<div class="site-description">
-				<p class="footer-desc"><span class="main-color"><?php bloginfo('name');?></span> <?php bloginfo('description'); ?></p>
+				<p class="footer-desc"><span class="main-color"><?php bloginfo('name');?></span> is a strategy and marketing agency aimed at making our clients visible and building their businesses.</p>
 				<p>&copy; <?php bloginfo('title'); ?>, LLC
 				</div>
 				
@@ -32,3 +32,4 @@
 	<?php wp_footer(); ?>
 </body>
 </html>
+
