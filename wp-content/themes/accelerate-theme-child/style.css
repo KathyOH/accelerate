@@ -125,9 +125,9 @@ h5.center-text {
 .nf-field-container.textarea-container.label-above {
 	width: 500px;
 }
-.nf-form-content {
-	width: 75%;
-	margin-left: 150px;
+
+.contact .site-content {
+	width: 40%;
 }
 
 
@@ -138,3 +138,4 @@ h5.center-text {
 .footer-desc {
 	width: 400px;
 }
+
