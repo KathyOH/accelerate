@@ -98,30 +98,38 @@ h5.center-text {
 	font-size: 12px;
 }
 
-nf-field-container.textbox-container.label-above {
+#nf-field-1-container.textbox-container.label-above {
 	display: block;
 	width: 49%;
 	float: left;
 	clear: initial;
 }
 
-nf-field-container.email-container.label-above  {
+#nf-field-2-container.email-container.label-above  {
 	display: block;
 	float: left;
 	width: 49%;
 	margin-left: 2%;
 	clear: initial;
 }
-
-.
-#nf-field-4-wrap {
+#nf-field-3-container.textarea-container.label-above {
+	width: 100%;
+}
+#nf-field-4.ninja-forms-field.nf-element {
 	float: right;
 	background-color: #45ac9d;
 	color: white;
+	width: 150px;
+	height: 50px;
 }
 .nf-field-container.textarea-container.label-above {
-	width: 660px;
+	width: 500px;
 }
+.nf-form-content {
+	width: 75%;
+	margin-left: 150px;
+}
+
 
 /*Footer color change*/
 .footer-desc .main-color {
