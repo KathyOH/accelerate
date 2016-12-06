@@ -115,6 +115,9 @@ h5.center-text {
 #nf-field-3-container.textarea-container.label-above {
 	width: 100%;
 }
+#nf-field-3 {
+	border: 1px solid #BFBFBF;
+}
 #nf-field-4.ninja-forms-field.nf-element {
 	float: right;
 	background-color: #45ac9d;
