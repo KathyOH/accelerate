@@ -142,3 +142,31 @@ h5.center-text {
 	width: 400px;
 }
 
+/* About */
+
+.hero-about {
+	background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+	height: 320px;
+	width: 100%;
+	padding 3em;
+}
+.hero-text .main-color {
+	color: #45ac9d;
+}
+.hero-text {
+	padding-top: 3em;
+	color: white;
+	text-align: center;
+	width: 60%;
+	margin-left: 10em;
+	margin-top: 0em;
+}
+
+
+.about-intro {
+	text-align: center;
+	font-size: 13px;
+}
+.about-intro h6{
+	font-size: 13px;
+}

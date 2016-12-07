@@ -16,37 +16,65 @@ get_header(); ?>
 
 	<?php
 		$taxi_image = get_field("taxi_image");
-		$taxi_text = get_field("taxi-text");
+		$taxi_text = get_field("taxi");
 		$services_intro_title = get_field("services_intro_title");
 		$services_intro_text = get_field("services_intro_text");
-		$service_1_title = get_field("services_1_title");
-		$service_1_text = get_field("services_1_text");
+		$service_1_title = get_field("service_1_title");
+		$service_1_description = get_field("service_1_description");
 		$service_1_image = get_field("service_1_image");
 		$service_2_title = get_field("service_2_title");
-		$service_2_text = get_field("service_2_text");
+		$service_2_description = get_field("service_2_description");
 		$service_2_image = get_field("service_2_image");
 		$service_3_title = get_field("service_3_title");
-		$service_3_text = get_field("service_3_text");
+		$service_3_description = get_field("service_3_description");
 		$service_3_image = get_field("service_3_image");
 		$service_4_title = get_field("service_4_title");
-		$service_4_text = get_field("service_4_text");
-		$service_4_text = get_field("service_4_image");
+		$service_4_description = get_field("service_4_description");
+		$service_4_image = get_field("service_4_image");
 		$about_contact_title = get_field("about_contact_title");
 		$contact_button_text = get_field("contact_button_text");
 		$size = "small";
 	?>
 
 
+			<section class="hero-about">
+				<div class="hero-text">
+					<h3 class="hero-text"><span class="main-color">Accelerate</span> is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visible and making their customers smile.</h3>
+					
+				</div>
+			</section>
+			
 
 
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 			
+
 			 <section class="about-intro">
                 <h6><?php echo $services_intro_title; ?></h6>
                     <?php echo $services_intro_text; ?>
             </section>
+			
+			
+			<?php echo wp_get_attachment_image($service_1_image, $size); ?>
+			<h2><?php echo $service_1_title; ?></h2>
+			<p><?php echo $service_1_description; ?></p>
+			
+			<?php echo wp_get_attachment_image($service_2_image, $size); ?>
+			<h2><?php echo $service_2_title; ?></h2>
+			<p> <?php echo $service_2_description; ?></p>
+			
+			<?php echo wp_get_attachment_image($service_3_image, $size); ?>
+			<h2><?php echo $service_3_title; ?></h2>
+			<p> <?php echo $service_3_description; ?></p>
+			
+			<?php echo wp_get_attachment_image($service_4_image, $size); ?>
+			<h2><?php echo $service_4_title; ?></h2>
+			<p> <?php echo $service_4_description; ?></p>
+			
+			<h2><?php echo $about_contact_title; ?></h2>
+			<?php echo $contact_button_text; ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
