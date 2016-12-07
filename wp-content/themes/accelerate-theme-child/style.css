@@ -157,9 +157,10 @@ h5.center-text {
 	padding-top: 3em;
 	color: white;
 	text-align: center;
-	width: 60%;
-	margin-left: 10em;
+	width: 58%;
+	margin-left: 12em;
 	margin-top: 0em;
+	font-weight: 100;
 }
 
 
