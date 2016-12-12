@@ -186,3 +186,25 @@ h5.center-text {
 .about-section:nth-child(even) .service-description {
 	float: right;
 }
+
+
+/* 404 Page */
+
+
+.hero-404 {
+	background: url("img/off-duty-taxi.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+	width: 100%;
+	float: left;
+	height: 600px;
+	background-size: cover;
+}
+.hero-text-404 .main-color {
+	color: #45ac9d;
+}
+.hero-text-404 h2{
+	font-family: 'Montserrat';
+	margin-top: 25%;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;

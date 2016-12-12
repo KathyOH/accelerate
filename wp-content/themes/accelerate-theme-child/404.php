@@ -14,15 +14,13 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
-            <div class="<?php if (is_page('contact')) {echo 'narrow-contact';} ?>"> 
-			 <?php while ( have_posts() ) : the_post(); ?>
-                    <h2><?php the_title(); ?></h2>
-				<?php the_content(); ?>
-			<?php endwhile; // end of the loop. ?>
-            </div><!--#class -->    
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
+	
+            <div class="hero-404">
+				<div class="hero-text-404">
+					<h2 class="hero-text-404">Sorry. This page is no longer working. <br>  Click <a href="<?php echo home_url(); ?>"><span class="main-color">here</span></a> to return to the homepage.</h2>
+				</div>
+			</div>
+			
 <?php get_footer(); ?>
+
+	
