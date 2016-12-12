@@ -163,6 +163,11 @@ h5.center-text {
 	font-weight: 100;
 }
 
+.about-section {
+	overflow: auto;
+	margin-left: 20%;
+	margin-right: 20%
+}
 
 .about-intro {
 	text-align: center;
@@ -172,21 +177,33 @@ h5.center-text {
 	font-size: 13px;
 }
 
+.about.section {
+	overflow: auto;
+	margin: 20px 0px;
+}
+
 .about-section:nth-child(odd) .service-image {
+	width: 29%;
 	float: left;
-	padding-right: 20px;
+	padding-right: 2%;
 }
 .about-section:nth-child(odd) .service-description {
-	width: 250px;
+	width: 58%;
 	float: left;
 }
 .about-section:nth-child(even) .service-image {
+	width: 29%;
 	float: right;
+	padding-left: 2%;
 }
 .about-section:nth-child(even) .service-description {
-	float: right;
+	width: 58%;
+	float: left;
 }
 
+.contact-description {
+	margin-right: 25%;
+}
 
 /* 404 Page */
 

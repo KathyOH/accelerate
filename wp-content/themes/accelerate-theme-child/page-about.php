@@ -43,16 +43,15 @@ get_header(); ?>
 		</div>
 	</section>
 			
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
-			
+	<section class="about-page">
 		<section class="about-intro">
 			<h6><?php echo $services_intro_title; ?></h6>
-                <?php echo $services_intro_text; ?>
-        </section>
+            	<?php echo $services_intro_text; ?>
+    
+		</section>
+	</section>	
 			
-			
-	<section class="about-section">
+	<div class="about-section">
 		<div class="service-image">
 			<?php echo wp_get_attachment_image($service_1_image, $size); ?>
 		</div>
@@ -60,6 +59,7 @@ get_header(); ?>
 			<h2><?php echo $service_1_title; ?></h2>
 			<p><?php echo $service_1_description; ?></p>
 		</div>
+
 		<div class="service-image">
 			<?php echo wp_get_attachment_image($service_2_image, $size); ?>
 		</div>
@@ -67,6 +67,7 @@ get_header(); ?>
 			<h2><?php echo $service_2_title; ?></h2>
 			<p> <?php echo $service_2_description; ?></p>
 		</div>
+
 		<div class="service-image">
 			<?php echo wp_get_attachment_image($service_3_image, $size); ?>
 		</div>
@@ -74,6 +75,8 @@ get_header(); ?>
 			<h2><?php echo $service_3_title; ?></h2>
 			<p> <?php echo $service_3_description; ?></p>
 		</div>
+	
+		
 		<div class="service-image">
 			<?php echo wp_get_attachment_image($service_4_image, $size); ?>
 		</div>
@@ -86,9 +89,7 @@ get_header(); ?>
 			<h2><?php echo $about_contact_title; ?></h2>
 			<?php echo $contact_button_text; ?>
 		</div>
-	</section>
+	</div>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
 
 <?php get_footer(); ?>
