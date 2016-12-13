@@ -54,7 +54,6 @@
 }
 
 /* Case Studies */
-
 article.case-study {
 	margin: 40px 0 0;
 }
@@ -143,7 +142,6 @@ h5.center-text {
 }
 
 /* About */
-
 .hero-about {
 	background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 	height: 320px;
@@ -202,17 +200,17 @@ h5.center-text {
 	float: left;
 }
 
-.contact-description {
+.contact-description h2{
+	display: inline-block;
 	margin-left: 25%;
+	margin-right: 4%;
 }
 
-.about-section .contact-description .button {
+.contact-description .button {
 	display: inline-block;
 }
 
 /* 404 Page */
-
-
 .hero-404 {
 	background: url("img/off-duty-taxi.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 	width: 100%;
