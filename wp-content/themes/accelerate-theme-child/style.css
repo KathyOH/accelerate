@@ -172,6 +172,7 @@ h5.center-text {
 .about-intro {
 	text-align: center;
 	font-size: 13px;
+	margin-bottom: 3%;
 }
 .about-intro h6{
 	font-size: 13px;
@@ -202,7 +203,11 @@ h5.center-text {
 }
 
 .contact-description {
-	margin-right: 25%;
+	margin-left: 25%;
+}
+
+.about-section .contact-description .button {
+	display: inline-block;
 }
 
 /* 404 Page */

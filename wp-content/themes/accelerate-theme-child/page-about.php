@@ -87,11 +87,12 @@ get_header(); ?>
 			<p> <?php echo $service_4_description; ?></p>
 		</div>
 	</div>
-
+	<div class="about.section">
 		<div class="contact-description">
 			<h2><?php echo $about_contact_title; ?></h2>
-			<?php echo $contact_button_text; ?>
+			<a class="button" href="<?php echo home_url(); ?>/contact">Contact us</a>
 		</div>
+	</div>
 
 
 
