@@ -57,9 +57,8 @@
 }
 .social-media-menu li{
 	display: inline-block;
-	text-decoration-color: #45ac9d;
 }
-.icon-2x icon-twitter {
+.social-media-menu i{
 	color: #45ac9d;
 }
 /* Case Studies */
