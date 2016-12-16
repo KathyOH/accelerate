@@ -285,7 +285,6 @@ h5.center-text {
 	padding: 5px 3px 4px 5px;
 	
 }
-	
 .mc4wp-form-fields {
 	margin-left: 5%
 	}
@@ -293,4 +292,7 @@ h5.center-text {
 	background-color: #45ac9d;
 	color: white;
 	font-family: 'Montserrat';
+}
+.mc4wp-alert.mc4wp-success p{
+	margin-left: 5%;
 }
