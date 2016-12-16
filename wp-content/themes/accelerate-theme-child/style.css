@@ -275,3 +275,22 @@ h5.center-text {
 	text-align: center;
 	font-size: 30px;
 	font-weight: 600;
+}
+
+/* Newsletter Sign-up Styling */
+
+#mc4wp_form_widget-2 {
+	background-color: #d3d3d3;
+	margin-left: 12%;
+	padding: 5px 3px 4px 5px;
+	
+}
+	
+.mc4wp-form-fields {
+	margin-left: 5%
+	}
+.newsletter-submit-button input{
+	background-color: #45ac9d;
+	color: white;
+	font-family: 'Montserrat';
+}
